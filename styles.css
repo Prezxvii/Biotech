@@ -1,0 +1,543 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12355b;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00a8e8;
+}
+
+/* Hero Section - Smaller Video */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust height (e.g., 60% of viewport height) */
+  overflow: hidden;
+}
+
+/* Video Background */
+#hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* New Section for Text */
+#hero-text {
+  text-align: center;
+  padding: 30px 20px; /* Reduced padding to bring text closer */
+  margin-top: -120px; /* Moves text up */
+  background: #f4f8fb; /* Light background for contrast */
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  background-color: #00a8e8;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #007bb5;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Mission & Vision Section */
+#mission-vision {
+  text-align: center;
+  background-color: #f4f8fb;
+  padding: 60px 20px;
+}
+
+#mission-vision h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 20px;
+}
+
+#mission-vision img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#mission-vision p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+#services h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 20px;
+}
+
+#services img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+#services li {
+  font-size: 1.2em;
+  background: #f4f8fb;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Latest Research Section */
+#research {
+  text-align: center;
+  background-color: #f4f8fb;
+  padding: 60px 20px;
+}
+
+#research h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 20px;
+}
+
+#research img {
+  width: 50%; /* Makes the image smaller */
+  max-width: 400px; /* Ensures the image doesn't get too large */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#research p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Case Studies Section */
+#case-studies {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+#case-studies h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 20px;
+}
+
+#case-studies img {
+  width: 50%; /* Makes the image smaller */
+  max-width: 400px; /* Ensures the image doesn't get too large */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#case-studies p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+
+/* Call to Action Section */
+#cta {
+  text-align: center;
+  background-color: #12355b;
+  color: white;
+  padding: 60px 20px;
+}
+
+#cta h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+#cta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+
+#cta ul li {
+  font-size: 1.2em;
+  background-color: #ffffff;
+  color: #12355b;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: 250px; /* Controls the width of each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cta ul li:hover {
+  transform: translateY(-10px); /* Adds a lifting effect */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#cta .btn {
+  background-color: #00a8e8;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 40px;
+}
+
+#cta .btn:hover {
+  background-color: #007bb5;
+}
+
+/* Investor & Partnership Opportunities Section */
+#investors {
+  text-align: center;
+  background-color: #f4f8fb; /* Light background to contrast the dark header */
+  color: #12355b;
+  padding: 60px 20px;
+}
+
+#investors h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #12355b;
+}
+
+#investors img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#investors p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#investors .btn {
+  background-color: #00a8e8;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#investors .btn:hover {
+  background-color: #007bb5;
+}
+
+/* Contact Us Section */
+#contact {
+  background-color: #ffffff; /* Light background for the contact section */
+  color: #12355b; /* Consistent text color */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  color: #12355b;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  background-color: #f4f8fb;
+}
+
+#contact textarea {
+  min-height: 150px;
+  resize: vertical; /* Allows vertical resizing */
+}
+
+#contact button {
+  padding: 15px 30px;
+  background-color: #00a8e8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background-color: #007bb5;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #00a8e8; /* Highlight borders on focus */
+}
+
+/* Features */
+#features ul {
+  list-style: none;
+  padding: 0;
+}
+
+#features li {
+  font-size: 18px;
+  background: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #00a8e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #12355b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+footer nav ul li {
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #00a8e8;
+}
+
+/* Social Media Section */
+.social-media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s; /* Add transition for filter */
+}
+
+/* Set the color of the social media icons to the theme color */
+.social-icon img {
+  filter: grayscale(100%) brightness(0) invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  transition: filter 0.3s ease-in-out;
+  width: 40px; /* Ensure the size of the icons */
+  height: 40px; /* Ensure the size of the icons */
+}
+
+/* Hover effect to change the color of icons */
+.social-icon:hover img {
+  filter: none; /* Remove grayscale effect on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Footer Mobile Responsiveness */
+@media (max-width: 768px) {
+  footer .footer-content {
+    flex-direction: column;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  footer nav ul li {
+    margin: 10px 0;
+  }
+
+  .social-media {
+    margin-top: 20px;
+  }
+}
+
+
